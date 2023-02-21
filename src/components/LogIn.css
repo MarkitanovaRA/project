@@ -1,0 +1,146 @@
+
+*{
+	margin: 0;
+	padding: 0;	
+ 	box-sizing: border-box;
+	font-family: 'Inter';
+}
+
+body {
+	
+	background: #414141;		
+}
+.container{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+.screen{	
+	border-collapse: separate;
+	overflow: hidden;
+	perspective: 1px;
+	border-radius: 66px;	
+	background:   #1F8668;		
+	position: relative;	
+	height: 600px;
+	width: 65%;	
+	box-shadow: 0px 0px 24px   #111f266c;
+}
+.welcome
+{
+	color: #1E1E1E;
+	opacity: 63%;
+	position: absolute;
+	width:100%;
+	height: 50%;
+	
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 48px;
+	padding-top: 82px;
+	padding-left: 85px;
+}
+.screen-content{
+	z-index: 1;
+	position:relative;	
+	height: 100%;
+}
+.screen-background{		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+.screen-background-shape{
+	
+	transform: rotate(0deg);
+	position: absolute;
+}
+.screen-background-shape2{
+	
+	height: 650px;
+	width: 520px;
+	background: #FFF;	
+	top: -25px;
+	right: 100px;	
+	
+}
+
+.screen-background-shape1{
+	
+	height: 800px;
+	width: 63px;
+	background: #1E1E1E;	
+	top: -25px;
+	right: 50px;	
+	
+}
+.login{
+	width: 550px;
+	padding: 65px;
+	
+	padding-top: 200px;
+}
+.login-field{
+	padding: 20px 0px;	
+	position: relative;	
+}
+.login-icon{
+	position: absolute;
+	top: 30px;
+	color: #1F8668;
+}
+.login-input{
+	border: none;
+	border-bottom: 2px solid   #1F8668;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+.login-input:active,
+.login-input:focus,
+.login-input:hover{
+	outline: none;
+	border-bottom-color:#1F8668;
+}
+.login-submit{
+	
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 10px 20px;
+	border-radius: 66px;
+	border: 1px solid  #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	text-align: center;
+	width: 200px;
+	color: #1F8668;
+	box-shadow: 0px 6px 10px #1F8668;
+	cursor: pointer;
+	transition: .2s;
+}
+.login-submit:active,
+.login-submit:focus,
+.login-submit:hover{
+	border-color: #1F8668;
+	outline: none;
+}
+.button-icon{
+	font-size: 24px;
+	margin-left: auto;
+	
+	color: #1F8668;
+}
+
